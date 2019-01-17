@@ -1,0 +1,32 @@
+@font-face {
+    font-weight: 400;
+    font-family: "PTSans";
+    font-style: normal;
+    src: url("../fonts/PTSans-Regular.woff") format("woff");
+    font-display: swap;
+  }
+
+@font-face {
+    font-weight: 700;
+    font-family: "PTSans";
+    font-style: normal;
+    src: url("../fonts/PTSans-Bold.woff") format("woff");
+    font-display: swap;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: $bgr-color;
+    color: $text-color;
+    font-family: 'PTSans', 'Arial', sans-serif;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  fieldset {
+    margin: 0;
+    padding: 0;
+  }

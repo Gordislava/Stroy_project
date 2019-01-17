@@ -1,0 +1,16 @@
+.top-list {
+  @include list-norm;
+  font-family: "PTSans", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 1.2;
+  margin: 0;
+  display: flex;
+  width: 45.2%;
+  justify-content: space-between;
+  padding: 8px 0 9px 0;
+}
+
+.top-list__link {
+  color: $text-light;
+}

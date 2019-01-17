@@ -1,0 +1,25 @@
+.main-nav {
+  width: 60.7%;
+}
+
+.main-nav__list {
+  @include list-norm;
+}
+
+.main-nav__list {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-nav__link {
+  @include text(700, 14px, $title-color, normal);
+  padding: 9px 0;
+  text-transform: uppercase;
+
+
+}
+
+.main-nav__link:hover {
+  border-bottom: 3px solid $accent;
+}

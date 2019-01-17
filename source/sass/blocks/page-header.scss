@@ -1,0 +1,36 @@
+.page-header {
+  @include wrapper;
+}
+
+.page-footer__dark {
+  width: 100%;
+  background-image: url('../../img/textureRomb.png');
+  background-repeat: repeat;
+
+}
+
+.page-header__container {
+  @include container;
+  display: flex;
+  justify-content: space-between;
+}
+
+.page-header__note {
+  font-family: "PTSans", "Arial", sans-serif;
+  font-weight: 400;
+  color: $text-light;
+  line-height: 1.2;
+  font-size: 13px;
+  margin: 0;
+  padding: 8px 0 9px 0;
+}
+
+.page-header__light {
+  width: 100%;
+  background-color: $bgr-dark;
+}
+
+.page-header__container--light {
+  align-items: center;
+  flex-wrap: wrap;
+}

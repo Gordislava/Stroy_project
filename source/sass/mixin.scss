@@ -1,0 +1,26 @@
+@mixin list-norm {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+@mixin wrapper {
+  width: 100%;
+}
+
+@mixin container {
+  width: 100%;
+  max-width: 1170px;
+  padding: 0 15px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+@mixin text ($weight, $size, $color, $line-height) {
+  font: {
+    weight: $weight;
+    size: $size;
+  }
+  color: $color;
+  line-height: $line-height;
+}

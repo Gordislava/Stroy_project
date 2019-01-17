@@ -1,0 +1,34 @@
+.promo {
+  @include wrapper;
+  background-image: url('../../img/bgr.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.promo__container {
+  @include container;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.promo__title {
+  @include text(700, 48px, $bgr-color, normal);
+  font-family: 'PTSans', 'Arial', sans-serif;
+  width: 48%;
+  max-width: 570px;
+  margin: 0 auto;
+  padding-top: 129px;
+  padding-bottom: 25px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.promo__link {
+  display: inline-block;
+  box-sizing: border-box;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 208px;
+}

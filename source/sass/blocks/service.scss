@@ -1,0 +1,23 @@
+.service {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 0 15px;
+}
+
+.service__list {
+  border-top: 20px solid $bgr-color;
+  border-left: 15px solid $bgr-color;
+  border-right: 15px solid $bgr-color;
+  border-radius: 4px;
+  display: flex;
+  width: 81.2%;
+  max-width: 1140px;
+  justify-content: space-between;
+  margin: 0 auto;
+  position: relative;
+  top: -100px;
+  background-color: $bgr-color;
+
+}

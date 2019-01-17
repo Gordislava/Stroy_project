@@ -1,0 +1,66 @@
+.service-item {
+  width: 32%;
+  position: relative;
+  //
+}
+
+
+.service-item__header {
+  @include text(700, 16px, $title-dark, normal);
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.service-item__up {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 30px;
+  margin: 0;
+  border-radius: 4px;
+}
+
+.service-item__list {
+  @include list-norm;
+  width: 100%;
+  max-width: 1170px;
+  flex-wrap: wrap;
+}
+
+.service-item__list li {
+  border-top: 1px solid $accent;
+
+  &:hover {
+    border-color: $text-color;
+  }
+}
+
+.service-item__link {
+  @include text (400, 14px, $title-color, normal);
+  padding: 10px 0;
+  width: 100%;
+  text-align: left;
+  text-transform: uppercase;
+  display: block;
+
+  &:hover {
+    color: $title-dark;
+  }
+}
+
+.service-item__up {
+  position: absolute;
+  bottom: 0;
+  z-index: 10;
+  background-color: $bgr-color;
+  box-shadow: 0px 3px 7px 0 rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  transition: 1s;
+
+}
+
+.service-item:hover .service-item__up {
+  opacity: 1;
+  transition: 0.5s ease-in;
+}
+
+
