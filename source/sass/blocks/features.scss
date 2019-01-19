@@ -1,0 +1,80 @@
+.features {
+  @include container;
+}
+
+.features__header {
+  @include title;
+  background-color: $bgr-dark;
+  padding: 5px 0 3px 0;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.features__list {
+  @include list-norm;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.features__item {
+  width: 22%;
+  position: relative;
+  padding-top: 150px;
+}
+
+.features__item::before {
+  @include pseudo;
+  width: 100%;
+  height: 150px;
+  box-sizing: border-box;
+  border: 1px dashed $text-light;
+  top: 0;
+  left: 0;
+}
+
+.features__item--offer::before {
+  background-image: url('../../img/icon1.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.features__item--engineer::before {
+  background-image: url('../../img/icon2.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.features__item--delivery::before {
+  background-image: url('../../img/icon3.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.features__item--free::before {
+  background-image: url('../../img/icon4.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.features__title {
+  @include text (700, 16px, $title-color, normal);
+  text-align: center;
+  margin: 0;
+  padding-top: 23px;
+  padding-bottom: 7px;
+}
+
+.features__text {
+  @include text (400, 16px, $text-color, normal);
+  text-align: center;
+  margin: 0 auto;
+  width: 80%;
+  box-sizing: border-box;
+}
+
+.features__item--free p {
+  padding: 0 20px;
+}

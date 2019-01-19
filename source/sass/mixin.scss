@@ -24,3 +24,19 @@
   color: $color;
   line-height: $line-height;
 }
+
+@mixin title {
+  font: {
+    weight: 700;
+    size: 24px;
+  }
+  color: $title-color;
+  line-height: normal;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+@mixin pseudo {
+  position: absolute;
+  content: "";
+}

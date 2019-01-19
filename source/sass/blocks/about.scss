@@ -1,0 +1,29 @@
+.about-container {
+  @include container;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+}
+.about {
+  width: 66.7%;
+  max-width: 780px;
+}
+
+.about__title {
+  @include title;
+  margin: 0;
+  padding-top: 35px;
+  padding-bottom: 15px;
+  text-align: left;
+}
+
+.about__text {
+  @include text (400, 16px, $text-color, 20px);
+  margin-top: 0;
+  margin-bottom: 40px;
+}
+
+.about__paragraph {
+  margin-top: 0;
+}
