@@ -78,3 +78,16 @@
 .features__item--free p {
   padding: 0 20px;
 }
+
+@media (max-width: 769px) {
+  .features__item {
+    width: 45%;
+  }
+}
+
+@media (max-width: 769px) {
+  .features__item {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}

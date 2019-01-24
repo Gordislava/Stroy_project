@@ -7,6 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
+    <svg style="display:none">
+      <symbol viewBox="0 0 25 25" id="icon-close">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 47.971 47.971">
+          <path d="M28.228 23.986L47.092 5.122a2.998 2.998 0 0 0 0-4.242 2.998 2.998 0 0 0-4.242 0L23.986 19.744 5.121.88a2.998 2.998 0 0 0-4.242 0 2.998 2.998 0 0 0 0 4.242l18.865 18.864L.879 42.85a2.998 2.998 0 1 0 4.242 4.241l18.865-18.864L42.85 47.091c.586.586 1.354.879 2.121.879s1.535-.293 2.121-.879a2.998 2.998 0 0 0 0-4.242L28.228 23.986z" /></svg>
+      </symbol>
+    </svg>
     <header class="page-header">
         <div class="page-footer__dark">
           <div class="page-header__container">
@@ -36,6 +42,9 @@
               <img src="img/logo.png" alt="" class="logo__img">
             </div>
             <nav class="main-nav">
+              <button class="main-nav__mobile-menu" type="button">
+                <span class="visually-hidden">Открыть меню</span>
+              </button>
               <ul class="main-nav__list">
                 <li class="main-nav__item">
                   <a href="" class="main-nav__link">Наши услуги</a>
@@ -60,7 +69,7 @@
                 </li>
               </ul>
             </nav>
-            <button class="button button--middle">
+            <button class="button button--middle page-header__button">
               Заказать звонок
             </button>
           </div>
@@ -75,7 +84,7 @@
           <a href="" class="promo__link button button--small">Подробнее</a>
         </div>
       </section>
-      <section class="service">
+       <section class="service">
         <div class="service__list">
           <div class="service-item">
             <img src="img/montazh.jpg" class="service-item__img service-item__img--first" alt="Строительно-монтажные работы">
@@ -222,7 +231,7 @@
           </div>
         </div>
       </section>
-      <section class="about-container">
+       <section class="about-container">
         <section class="about">
           <h2 class="about__title">Название компании</h2>
           <div class="about__text">
@@ -296,35 +305,40 @@
           </ul>
         </section>
       </section>
-      <section class="form">
+      <!--<section class="form">
         <div class="form__all">
-          <h3 class="form__title">Мне нужен специалист</h3>
-          <p class="form__text">на замер и/или расчет стоимости работ</p>
+          <div class="form__text-all">
+            <h3 class="form__title">Мне нужен специалист</h3>
+            <p class="form__text">на замер и/или расчет стоимости работ</p>
+          </div>
           <input type="text" name="phone" class="form__phone" placeholder="Номер телефона">
           <button type="button" class="button form__button">Свяжитесь со мной</button>
         </div>
+        <p class="form__note">отправляя заявку я соглашаюсь с пользовательским соглшением и принимаю условия политики конфидициальности</p>
       </section>
       <section class="articles">
-        <h2 class="articles__title">Полезные статьи</h2>
+        <h2 class="articles__header">Полезные статьи</h2>
         <div class="articles__list">
           <article class="articles__item article">
-            <img src="" alt="" class="article__img">
+            <img src="img/article3.jpg" alt="" class="article__img">
             <h3 class="article__title">Как построить дом с нуля</h3>
             <p class="article__descr">
               Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений.
           </p>
           </article>
           <article class="articles__item article">
-            <img src="" alt="" class="article__img">
-            <h3 class="article__title">Как построить дом с нуля</h3>
+            <img src="img/article1.jpg" alt="" class="article__img">
+            <h3 class="article__title">Строительство коттеджа. Какой материал
+            выбрать</h3>
             <p class="article__descr">
               Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного
               текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений.
             </p>
           </article>
           <article class="articles__item article">
-            <img src="" alt="" class="article__img">
-            <h3 class="article__title">Как построить дом с нуля</h3>
+            <img src="img/article2.jpg" alt="" class="article__img">
+            <h3 class="article__title">Как рассчитать стоимость дома из
+            SIP-панелей</h3>
             <p class="article__descr">
               Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного
               текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений.
@@ -335,104 +349,119 @@
       </section>
     </main>
     <footer class="page-footer">
-      <div class="footer__top">
-        <h4 class="page-footer__title">Меню сайта</h4>
-        <ul class="page-footer__list site-list">
-          <li class="site-list__item">
-            <a href="" class="site-list__link">Наши услуги</a>
-          </li>
-          <li class="site-list__item">
-            <a href="" class="site-list__link">О нас</a>
-          </li>
-          <li class="site-list__item">
-            <a href="" class="site-list__link">Наши работы</a>
-          </li>
-          <li class="site-list__item">
-            <a href="" class="site-list__link">Партнеры</a>
-          </li>
-          <li class="site-list__item">
-            <a href="" class="site-list__link">Статьи</a>
-          </li>
-          <li class="site-list__item">
-            <a href="" class="site-list__link">Контакты</a>
-          </li>
-          <li class="site-list__item">
-            <a href="" class="site-list__link">Документация</a>
-          </li>
-          <li class="site-list__item">Прайс-лист</a>
-          </li>
-          <li class="site-list__item">
-            <a href="" class="site-list__link">Как заказть услугу</a>
-          </li>
-          <li class="site-list__item">
-            <a href="" class="site-list__link">Способы оплаты</a>
-          </li>
-        </ul>
-        <h4 class="page-footer__title">Услуги</h4>
-        <ul class="page-footer__list service-list">
-          <li class="service-list__item">
-            <a href="" class="service-list__link">Электромонтажные работы</a>
-          </li>
-          <li class="service-list__item">
-            <a href="" class="service-list__link">Сантехнические работы</a>
-          </li>
-          <li class="service-list__item">
-            <a href="" class="service-list__link">Строительствоо домов, дач, коттеджей</a>
-          </li>
-          <li class="service-list__item">
-            <a href="" class="service-list__link">Кровельные работы</a>
-          </li>
-          <li class="service-list__item">
-            <a href="" class="service-list__link">Фасадные работы</a>
-          </li>
-          <li class="service-list__item">
-            <a href="" class="service-list__link">Строительство забора</a>
-          </li>
-          <li class="service-list__item">
-            <a href="" class="service-list__link">Проектные работы</a>
-          </li>
-          <li class="service-list__item">
-            <a href="" class="service-list__link">Монолитные, бетонные работы</a>
-          </li>
-          <li class="service-list__item">
-            <a href="" class="service-list__link">Дизайн квартир, офисов, коттеджей</a>
-          </li>
-          <li class="service-list__item">
-            <a href="" class="service-list__link">Монтаж и установка кондиционеров</a>
-          </li>
-          <li class="service-list__item">
-            <a href="" class="service-list__link">Бурение скважин</a>
-          </li>
-        </ul>
-        <button type="button" class="footer__button button call-button">Заказать звонок</button>
-        <ul class="footer__social social">
-          <li class="social__item">
-            <a href="" class="social__link">YouTube</a>
-          </li>
-          <li class="social__item">
-            <a href="" class="social__link">Instagram</a>
-          </li>
-          <li class="social__item">
-            <a href="" class="social__link">VK</a>
-          </li>
-        </ul>
+      <div class="page-footer__top">
+        <div class="page-footer__top--left">
+          <h4 class="page-footer__title">Меню сайта</h4>
+          <ul class="page-footer__list site-list">
+            <li class="site-list__item">
+              <a href="" class="site-list__link">Наши услуги</a>
+            </li>
+            <li class="site-list__item">
+              <a href="" class="site-list__link">О нас</a>
+            </li>
+            <li class="site-list__item">
+              <a href="" class="site-list__link">Наши работы</a>
+            </li>
+            <li class="site-list__item">
+              <a href="" class="site-list__link">Партнеры</a>
+            </li>
+            <li class="site-list__item">
+              <a href="" class="site-list__link">Статьи</a>
+            </li>
+            <li class="site-list__item">
+              <a href="" class="site-list__link">Контакты</a>
+            </li>
+            <li class="site-list__item">
+              <a href="" class="site-list__link">Документация</a>
+            </li>
+            <li class="site-list__item">
+              <a href="" class="site-list__link">Прайс-лист</a>
+            </li>
+            <li class="site-list__item">
+              <a href="" class="site-list__link">Как заказть услугу</a>
+            </li>
+            <li class="site-list__item">
+              <a href="" class="site-list__link">Способы оплаты</a>
+            </li>
+          </ul>
+        </div>
+        <div class="page-footer__top--center">
+          <h4 class="page-footer__title">Услуги</h4>
+          <ul class="page-footer__list service-list">
+            <li class="service-list__item">
+              <a href="" class="service-list__link">Электромонтажные работы</a>
+            </li>
+            <li class="service-list__item">
+              <a href="" class="service-list__link">Сантехнические работы</a>
+            </li>
+            <li class="service-list__item">
+              <a href="" class="service-list__link">Строительствоо домов, дач, коттеджей</a>
+            </li>
+            <li class="service-list__item">
+              <a href="" class="service-list__link">Кровельные работы</a>
+            </li>
+            <li class="service-list__item">
+              <a href="" class="service-list__link">Фасадные работы</a>
+            </li>
+            <li class="service-list__item">
+              <a href="" class="service-list__link">Строительство забора</a>
+            </li>
+            <li class="service-list__item">
+              <a href="" class="service-list__link">Проектные работы</a>
+            </li>
+            <li class="service-list__item">
+              <a href="" class="service-list__link">Монолитные, бетонные работы</a>
+            </li>
+            <li class="service-list__item">
+              <a href="" class="service-list__link">Дизайн квартир, офисов, коттеджей</a>
+            </li>
+            <li class="service-list__item">
+              <a href="" class="service-list__link">Монтаж и установка кондиционеров</a>
+            </li>
+            <li class="service-list__item">
+              <a href="" class="service-list__link">Бурение скважин</a>
+            </li>
+          </ul>
+        </div>
+        <div class="page-footer__top--right">
+          <button type="button" class="button call-button page-footer__button">Заказать звонок</button>
+          <ul class="page-footer__social social">
+            <li class="social__item social__item--youtube">
+              <a href="" class="social__link">
+                <span class="visually-hidden">YouTube</span>
+              </a>
+            </li>
+            <li class="social__item social__item--inst">
+              <a href="" class="social__link">
+                <span class="visually-hidden">Instagram</span>
+              </a>
+            </li>
+            <li class="social__item social__item--vk">
+              <a href="" class="social__link">
+                <span class="visually-hidden">VK</span>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
       <div class="page-footer__middle">
-        <ul class="page-footer__contacts contacts">
-          <li class="contacts__item">
-            г. Минск, ул. Кирова, 29, оф. 15
-          </li>
-          <li class="contacts__item">
-            <a href="mailto:info@companyname.by">info@companyname.by</a>
-          </li>
-          <li class="contacts__item">
-            <a href="tel:+375299876532">+375 29 987 65 32</a>
-          </li>
-        </ul>
-        <ul class="page-footer__official">
-          <li>ОГРН 987654321</li>
-          <li>УНП 987654321</li>
-        </ul>
+        <div class="page-footer__middle-container">
+          <ul class="page-footer__contacts contacts">
+            <li class="contacts__item contacts__item--address">
+              г. Минск, ул. Кирова, 29, оф. 15
+            </li>
+            <li class="contacts__item contacts__item--email">
+              <a href="mailto:info@companyname.by">info@companyname.by</a>
+            </li>
+            <li class="contacts__item contacts__item--phone">
+              <a href="tel:+375299876532">+375 29 987 65 32</a>
+            </li>
+          </ul>
+          <ul class="page-footer__official">
+            <li>ОГРН 987654321</li>
+            <li>УНП 987654321</li>
+          </ul>
+        </div>
       </div>
       <div class="page-footer__bottom">
         <div class="page-footer__copyright">
@@ -443,6 +472,42 @@
         </div>
         <p class="page-footer__dev">Создание сайта - <a href="#">Студия ЯР</a></p>
       </div>
-    </footer>
+    </footer> -->
+      <section class="mobile visually-hidden">
+        <div class="mobile__container">
+          <div class="mobile__wrapper">
+            <button class="mobile__close">
+              <span class="visually-hidden">Закрыть</span>
+              <svg class="mobile__close--icon" width="20" height="20">
+                <use xlink:href="#icon-close"></use>
+              </svg>
+            </button>
+            <ul class="mobile-nav__list">
+              <li class="mobile-nav__item">
+                <a href="" class="mobile-nav__link">Наши услуги</a>
+              </li>
+              <li class="mobile-nav__item">
+                <a href="" class="mobile-nav__link">О нас</a>
+              </li>
+              <li class="mobile-nav__item">
+                <a href="" class="mobile-nav__link">Наши работы</a>
+              </li>
+              <li class="mobile-nav__item">
+                <a href="" class="mobile-nav__link">Партнеры</a>
+              </li>
+              <li class="mobile-nav__item">
+                <a href="" class="mobile-nav__link">Статьи</a>
+              </li>
+              <li class="mobile-nav__item">
+                <a href="" class="mobile-nav__link">Контакты</a>
+              </li>
+              <li class="mobile-nav__item">
+                <a href="" class="mobile-nav__link">Поиск</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <script src="js/script.js"></script>
   </body>
 </html>

@@ -1,0 +1,30 @@
+.social {
+  align-self: flex-end;
+}
+
+.social__item {
+  width: 24.2%;
+  background-color: $bgr-color;
+  height: 26px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 16px 16px;
+  border-radius: 4px;
+
+  &:hover {
+    background-color: $accent;
+  }
+}
+
+.social__item--youtube {
+  background-image: url('../../img/youtube.svg');
+}
+
+.social__item--inst {
+  background-image: url('../../img/instagram.svg');
+}
+
+.social__item--vk {
+  background-image: url('../../img/vk.svg');
+
+}

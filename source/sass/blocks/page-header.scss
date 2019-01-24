@@ -34,3 +34,13 @@
   align-items: center;
   flex-wrap: wrap;
 }
+
+.page-header__button {
+  order: 3;
+}
+
+@media (max-width: 375px) {
+  .page-header__note {
+    display: none;
+  }
+}

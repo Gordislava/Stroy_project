@@ -1,0 +1,9 @@
+.logo {
+  order: 1;
+}
+
+@media (max-width: 768px) {
+  .logo {
+    order: 2;
+  }
+}

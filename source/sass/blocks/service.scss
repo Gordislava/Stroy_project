@@ -21,3 +21,10 @@
   position: relative;
   background-color: $bgr-color;
 }
+
+@media (max-width: 769px) {
+  .service__list {
+    width: 90%;
+    flex-direction: column;
+  }
+}

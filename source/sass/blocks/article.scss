@@ -1,0 +1,33 @@
+.article {
+  width: 32.8%;
+  box-sizing: border-box;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.article:hover {
+  box-shadow: 0px 3px 7px 0 rgba(0, 0, 0, 0.2);
+}
+
+.article__img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  margin-bottom: 14px;
+
+}
+
+.article__title {
+  @include text (700, 16px, $title-color, normal);
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 12px;
+}
+
+.article__descr {
+  @include text (400, 15px, inherit, 20px);
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}

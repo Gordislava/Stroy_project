@@ -32,3 +32,16 @@
   margin: 0 auto;
   margin-bottom: 208px;
 }
+
+@media (max-width: 768px) {
+  .promo__title {
+    width: 100%;
+  }
+}
+
+@media (max-width: 426px) {
+  .promo__title {
+    max-width: none;
+    font-size: 35px;
+  }
+}

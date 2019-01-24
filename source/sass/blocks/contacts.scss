@@ -1,0 +1,33 @@
+.contacts {
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.contacts__item a:hover {
+  color: $text-light;
+}
+
+.contacts__item {
+  padding-left: 25px;
+
+  background-repeat: no-repeat;
+  background-position: left;
+
+}
+
+.contacts__item--address {
+  background-image: url('../../img/home.svg');
+  background-size: 13px 13px;
+}
+
+.contacts__item--email {
+  background-image: url('../../img/mail.svg');
+  background-size: 14px 13px;
+}
+
+.contacts__item--phone {
+  background-image: url('../../img/phone.svg');
+  background-size: 11px 11px;
+}

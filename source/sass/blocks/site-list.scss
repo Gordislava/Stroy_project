@@ -1,0 +1,8 @@
+.site-list__link {
+  @include text (400, 15px, $bgr-color, 24px);
+
+  &:hover {
+    color: $text-light;
+  }
+}
+

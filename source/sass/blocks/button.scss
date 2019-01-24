@@ -21,3 +21,20 @@
 .button--small {
   width: 12.4%;
 }
+
+@media (max-width: 768px) {
+  .button--middle,
+  .button--small {
+    width: 25%;
+  }
+}
+
+@media (max-width: 425px) {
+  .button--middle {
+    display: block;
+  }
+
+  .button--small {
+    width: 40%;
+  }
+}

@@ -1,0 +1,71 @@
+.form {
+  @include container;
+  background-image: url('../../img/form.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 32px;
+}
+
+.form__all {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0 20px;
+  align-content: center;
+  align-items: center;
+  margin-bottom: 5px;
+  padding-top: 25px;
+}
+
+.form__title {
+  @include text (700, 24px, $accent, normal);
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+}
+
+.form__text {
+  @include text (700, 16px, $bgr-color, normal);
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+}
+
+.form__text-all {
+  padding: 25px 0 23px 90px;
+  position: relative;
+
+}
+
+.form__text-all::before {
+  @include pseudo;
+  bottom: 1px;
+  left: 0;
+  width: 62px;
+  height: 113px;
+  z-index: 10;
+  background-image: url('../../img/stroy.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.form__phone {
+  width: 28%;
+  border: 1px solid $text-light;
+  border-radius: 4px;
+  padding: 13px 15px;
+}
+
+.form__phone::placeholder {
+  @include text (400, 14px, $text-light, normal);
+}
+
+.form__button {
+  width: 16%;
+}
+
+.form__note {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}

@@ -9,8 +9,22 @@
   width: 45.2%;
   justify-content: space-between;
   padding: 8px 0 9px 0;
+  flex-wrap: wrap;
 }
 
 .top-list__link {
   color: $text-light;
+}
+
+@media (max-width: 820px) {
+ .top-list {
+   width: 60%;
+  }
+}
+
+@media (max-width: 375px) {
+  .top-list {
+   width: 100%;
+   justify-content: space-around;
+  }
 }
