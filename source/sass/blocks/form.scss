@@ -69,3 +69,48 @@
   padding: 0;
   text-align: center;
 }
+
+
+@media (max-width: 1024px) {
+  .form {
+    padding: 0;
+  }
+}
+
+@media (max-width: 900px) {
+  .form__text-all::before {
+    display: none;
+  }
+
+  .form__text-all {
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .form {
+    background-image: url('../../img/textureRomb.png');
+    background-repeat: repeat;
+  }
+
+  .form__button {
+    width: 100%;
+    flex-grow: 1;
+    margin-bottom: 10px;
+  }
+
+  .form__note {
+    padding-bottom: 10px;
+  }
+}
+
+@media (max-width: 425px) {
+  .form__phone {
+    flex-grow: 1;
+    margin-bottom: 15px;
+  }
+
+  .form__title {
+    font-size: 23px;
+  }
+}

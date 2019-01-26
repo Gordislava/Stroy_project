@@ -28,6 +28,7 @@
 .page-header__light {
   width: 100%;
   background-color: $bgr-dark;
+  box-shadow: 0px 3px 7px 0 rgba(0, 0, 0, 0.2);
 }
 
 .page-header__container--light {
@@ -39,7 +40,7 @@
   order: 3;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 425px) {
   .page-header__note {
     display: none;
   }

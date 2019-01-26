@@ -1,0 +1,30 @@
+.pagination {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+
+.pagination__list {
+  @include list-norm;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+.pagination__link {
+  @include text (700, 14px, $title-color, normal);
+  width: 100%;
+  padding: 5px 10px;
+  border-radius: 4px;
+
+  &:hover,
+  &:active {
+    background-color: $accent;
+  }
+}
+
+.pagination__link--last {
+  background-color: $bgr-dark;
+}

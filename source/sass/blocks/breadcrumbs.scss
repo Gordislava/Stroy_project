@@ -1,0 +1,26 @@
+.breadcrumbs {
+  width: 79.2%;
+  max-width: 1170px;
+  padding: 0 15px;
+  margin: 0 auto;
+  margin-top: 18px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+}
+
+.breadcrumbs__list {
+  @include list-norm;
+  display: flex;
+  width: 10%;
+  min-width: 100px;
+  justify-content: space-between;
+}
+
+.breadcrumbs__link {
+  @include text (400, 13px, $text-color, normal);
+}
+
+.breadcrumbs--full {
+  width: 100%;
+  padding: 0;
+}

@@ -22,6 +22,20 @@
   background-color: $bgr-color;
 }
 
+.service--inner-page {
+  margin-bottom: 120px;
+  margin-top: 0;
+}
+
+.service__title {
+  @include text (700, 24px, $title-dark, normal);
+  text-transform: uppercase;
+  display: block;
+  width: 81.2%;
+  margin: 0 auto;
+
+}
+
 @media (max-width: 769px) {
   .service__list {
     width: 90%;

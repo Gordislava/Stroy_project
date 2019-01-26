@@ -31,3 +31,9 @@
   background-image: url('../../img/phone.svg');
   background-size: 11px 11px;
 }
+
+@media (max-width: 910px) {
+  .contacts {
+    width: 70%;
+  }
+}

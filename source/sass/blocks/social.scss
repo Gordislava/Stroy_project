@@ -28,3 +28,17 @@
   background-image: url('../../img/vk.svg');
 
 }
+
+@media (max-width: 910px) {
+  .social {
+    width: 30%;
+    align-self: normal;
+  }
+}
+
+@media (max-width: 426px) {
+  .social {
+    width: 50%;
+    min-width: 121px;
+  }
+}

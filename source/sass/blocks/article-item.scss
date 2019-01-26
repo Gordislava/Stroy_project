@@ -1,0 +1,11 @@
+.article-item__header {
+  @include text (700, 18px, $title-color, normal);
+}
+
+.article-item__descr {
+  @include text (400, 16px, $text-color, 20px);
+}
+
+.article-item__date {
+  @include text (400, 14px, $text-light, 20px);
+}
