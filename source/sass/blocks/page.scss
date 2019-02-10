@@ -1,0 +1,76 @@
+.page {
+  @include container;
+}
+
+.page__title {
+  font: {
+    weight: 700;
+    size: 24px;
+  }
+  color: $title-color;
+  line-height: normal;
+  text-transform: uppercase;
+  text-align: left;
+  margin: 11px 0 14px 0;
+}
+
+.page__text {
+  @include text (400, 16px, $text-color, 20px);
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.page__list {
+  list-style: url("../../img/check-solid.svg");
+  margin-left: 0;
+}
+
+.page__note {
+  width: 100%;
+  background-color: $bgr-dark;
+  padding: 17px 0 5px 45px;
+  position: relative;
+  margin: 30px 0;
+  box-sizing: border-box;
+}
+
+.page__note::before {
+  @include pseudo;
+  width: 6px;
+  height: 36px;
+  left: 25px;
+  background-color: $accent;
+  border-radius: 4px;
+}
+
+.page__small-title {
+  color: $title-color;
+}
+
+.page__table th,
+.page__table td {
+  padding: 15px 0;
+  border: 1px solid $bgr-dark;
+}
+
+.page__table tr:first-child {
+  background-color: $bgr-dark;
+  border: none;
+  color: $title-color;
+}
+
+.page__table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 30px 0;
+}
+
+.page__table td {
+  text-align: center;
+}
+
+.page__table td:first-child,
+.page__table th:first-child {
+  padding-left: 14px;
+  text-align: left;
+}

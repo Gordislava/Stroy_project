@@ -1,0 +1,106 @@
+.partners-page {
+  @include container;
+  width: 100%;
+  margin-bottom: 300px;
+}
+
+.partners-page__title {
+  @include text (700, 24px, $title-color, normal);
+  margin: 0;
+  padding: 0;
+  padding-bottom: 15px;
+}
+
+.partners-page__list {
+  @include list-norm;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.partners-page__item {
+  width: 47.4%;
+  @include text (400, 16px, $text-color, 20px);
+  border: 1px solid $text-light;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.partners-page__text {
+  width: 55.5%;
+  margin: 12px 21px;
+  padding: 0;
+  text-align: right;
+}
+
+.partners-page__descr {
+  padding: 0;
+  margin: 0;
+}
+
+.parners-page__link {
+  color: $accent;
+
+  &:hover {
+    color: darken($color: $accent, $amount: 10)
+  }
+}
+
+.partners-page__img {
+  max-width: 39%;
+}
+
+.partners-page__button-section {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.partners-page__button {
+  width: 16.2%;
+  min-width: 190px;
+}
+
+.partners-page__note {
+  @include text (400, 15px, $title-dark, 20px);
+  margin: 0;
+  width: 77%;
+  text-align: left;
+}
+
+@media (max-width: 860px) {
+  .partners-page__note {
+    padding-top: 15px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 769px) {
+  .partners-page__item {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 425px) {
+  .partners-page__item {
+    width: 100%;
+  }
+}
+
+@media (max-width: 320px) {
+  .partners-page__item {
+    flex-direction: column;
+  }
+
+  .partners-page__text {
+    width: 100%;
+    text-align: center;
+  }
+}

@@ -29,10 +29,27 @@
 
 }
 
+.social--contacts {
+  width: 14%;
+}
+
+.social__item--contacts {
+  background-color: $accent;
+  height: 40px;
+  background-size: 20px 20px;
+}
+
 @media (max-width: 910px) {
   .social {
     width: 30%;
     align-self: normal;
+  }
+}
+
+@media (max-width: 769px) {
+  .social--contacts {
+    width: 30%;
+    margin: 0;
   }
 }
 
@@ -41,4 +58,11 @@
     width: 50%;
     min-width: 121px;
   }
+
+  .social--contacts {
+    width: 50%;
+    margin: auto;
+  }
 }
+
+

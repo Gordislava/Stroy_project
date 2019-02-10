@@ -30,6 +30,15 @@
   margin: 0;
   padding: 0;
   padding-bottom: 14px;
+
+}
+
+.articles-all__title a {
+  color: $title-color;
+
+  &:hover {
+    color: $title-dark;
+  }
 }
 
 .atticles-all__descr {

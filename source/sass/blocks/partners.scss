@@ -43,6 +43,20 @@
   transition: 0.5s ease-in-out;
 }
 
+.partners--inner {
+  @include container;
+  margin-bottom: 20px;
+  margin-top: 30px;
+}
+
+.partners--inner h2 {
+  @include title;
+  background-color: $bgr-dark;
+  padding: 5px 0 3px 0;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
 @media (max-width: 890px) {
   .partners {
     width: 100%;

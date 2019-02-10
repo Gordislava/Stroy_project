@@ -41,7 +41,9 @@
     <div class="page-header__light">
       <div class="page-header__container page-header__container--light">
         <div class="logo">
-          <img src="img/logo.png" alt="" class="logo__img">
+          <a href="index.html">
+            <img src="img/logo.png" alt="" class="logo__img">
+          </a>
         </div>
         <nav class="main-nav">
           <button class="main-nav__mobile-menu" type="button">
@@ -49,7 +51,7 @@
           </button>
           <ul class="main-nav__list">
             <li class="main-nav__item">
-              <a href="" class="main-nav__link">Наши услуги</a>
+              <a href="services.html" class="main-nav__link">Наши услуги</a>
             </li>
             <li class="main-nav__item">
               <a href="" class="main-nav__link">О нас</a>
@@ -61,7 +63,7 @@
               <a href="" class="main-nav__link">Партнеры</a>
             </li>
             <li class="main-nav__item">
-              <a href="" class="main-nav__link">Статьи</a>
+              <a href="articles.html" class="main-nav__link">Статьи</a>
             </li>
             <li class="main-nav__item">
               <a href="" class="main-nav__link">Контакты</a>
@@ -78,107 +80,129 @@
     </div>
   </header>
   <main class="page-main">
-    <section class="articles-page">
-      <div class="articles-page__container-left">
-        <div class="breadcrumbs breadcrumbs--full">
-          <ul class="breadcrumbs__list">
-            <li class="breadcrumbs__item breadcrumbs__item--index">
-              <a href="index.html" class="breadcrumbs__link">Главная</a>
-            </li>
-            <li class="breadcrumbs__item">
-              <a href="" class="breadcrumbs__link">Услуги</a>
-            </li>
-          </ul>
+    <div class="breadcrumbs">
+      <ul class="breadcrumbs__list">
+        <li class="breadcrumbs__item breadcrumbs__item--index">
+          <a href="index.html" class="breadcrumbs__link">Главная</a>
+        </li>
+        <li class="breadcrumbs__item">
+          <a href="" class="breadcrumbs__link">Услуги</a>
+        </li>
+      </ul>
+    </div>
+    <section class="about-page page">
+      <h1 class="page__title about-page__title">О нас</h1>
+      <section class="about-page__text">
+        <p class="page__text">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного
+        текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях.</p>
+        <p class="page__text">При создании генератора мы использовали небезизвестный универсальный код речей. Текст генерируется абзацами случайным образом от двух до десяти предложений в абзаце, что позволяет сделать текст более
+        привлекательным и живым для визуально-слухового восприятия.</p>
+        <ul class="page__list">
+          <li class="page__item">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру</li>
+          <li class="page__item">При создании генератора мы использовали небезизвестный универсальный код речей.
+          </li>
+          <li class="page__item">Текст генерируется абзацами случайным образом</li>
+          <li class="page__item">Позволяет сделать текст более
+          привлекательным и живым для визуально-слухового восприятия</li>
+        </ul>
+        <div class="page__note">
+          <p class="page__text">Текст генерируется абзацами случайным образом от двух до десяти предложений.При создании генератора мы использовали небезизвестный универсальный код речей.</p>
         </div>
-        <section class="articles-all">
-          <h1 class="articles-all__header">Полезные статьи</h1>
-          <article class="article-item articles-all__item">
-            <img src="img/artPage.png" alt="" class="article-item__img articles-all__img">
-            <div class="article-item__text articles-all__text">
-              <h2 class="article-item__header articles-all__title">Название статьи</h2>
-              <p class="article-item__descr atticles-all__descr">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык...</p>
-              <p class="article-item__date articles-all__date">10 Июля 2018</p>
+        <p class="page__text">
+          Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. При создании генератора мы использовали небезизвестный универсальный код речей.
+        </p>
+        <p class="page__text">
+          Текст генерируется абзацами случайным образом от двух до десяти предложений в абзаце, что позволяет сделать текст более привлекательным и живым для визуально-слухового восприятия.
+        </p>
+      </section>
+      <section class="features">
+        <h2 class="features__header">С нами выгодно работать</h2>
+        <ul class="features__list">
+          <li class="features__item features__item--offer">
+            <h3 class="features__title">Комплексное предложение</h3>
+            <p class="features__text">От проекта и подбора материала до сдачи объекта</p>
+          </li>
+          <li class="features__item features__item--engineer">
+            <h3 class="features__title">Инжинерное сопровождение</h3>
+            <p class="features__text">На всех стадиях оказания услуг</p>
+          </li>
+          <li class="features__item features__item--delivery">
+            <h3 class="features__title">Удобная доставка</h3>
+            <p class="features__text">В любую точку города и области</p>
+          </li>
+          <li class="features__item features__item--free">
+            <h3 class="features__title">Бесплатный расчет</h3>
+            <p class="features__text">Всех услуг под ваши нужды</p>
+          </li>
+        </ul>
+      </section>
+      <section class="partners partners--inner">
+        <h2 class="partners__title">Наши партнеры</h2>
+        <ul class="partners__list">
+          <li class="partners__item">
+            <img src="img/чб_atlant.png" alt="Атлант">
+            <div class="partners__hover">
+              <a href="" class="partners__link" href="#">
+                <img src="img/атлант.png" alt="">
+              </a>
             </div>
-          </article>
-          <article class="article-item articles-all__item">
-            <img src="img/artPage.png" alt="" class="article-item__img articles-all__img">
-            <div class="article-item__text articles-all__text">
-              <h2 class="article-item__header articles-all__title"><a href="article.html">Название статьи</a></h2>
-              <p class="article-item__descr atticles-all__descr">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык...</p>
-              <p class="article-item__date articles-all__date">10 Июля 2018</p>
+          </li>
+          <li class="partners__item">
+            <img src="img/чб_preysi.png" alt="Preysi">
+            <div class="partners__hover">
+              <a class="partners__link" href="#">
+                <img src="img/preysi.png" alt="">
+              </a>
             </div>
-          </article>
-          <article class="article-item articles-all__item">
-            <img src="img/artPage.png" alt="" class="article-item__img articles-all__img">
-            <div class="article-item__text articles-all__text">
-              <h2 class="article-item__header articles-all__title">Название статьи</h2>
-              <p class="article-item__descr atticles-all__descr">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык...</p>
-              <p class="article-item__date articles-all__date">10 Июля 2018</p>
+          </li>
+          <li class="partners__item">
+            <img src="img/чб_автолид.png" alt="Автолид">
+            <div class="partners__hover">
+              <a class="partners__link" href="#">
+                <img src="img/автолид.png" alt="">
+              </a>
             </div>
-          </article>
-          <article class="article-item articles-all__item">
-            <img src="img/artPage.png" alt="" class="article-item__img articles-all__img">
-            <div class="article-item__text articles-all__text">
-              <h2 class="article-item__header articles-all__title">Название статьи</h2>
-              <p class="article-item__descr atticles-all__descr">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык...</p>
-              <p class="article-item__date articles-all__date">10 Июля 2018</p>
+          </li>
+          <li class="partners__item">
+            <img src="img/чб_ленспец.png" alt="ЛенСпецСМУ Комфорт">
+            <div class="partners__hover">
+              <a class="partners__link" href="#">
+                <img src="img/ленспец.png" alt="">
+              </a>
             </div>
-          </article>
-          <article class="article-item article-item articles-all__item">
-            <img src="img/artPage.png" alt="" class="article-item__img articles-all__img">
-            <div class="article-item__text articles-all__text">
-              <h2 class="article-item__header articles-all__title">Название статьи</h2>
-              <p class="article-item__descr atticles-all__descr">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык...</p>
-              <p class="article-item__date articles-all__date">10 Июля 2018</p>
+          </li>
+          <li class="partners__item">
+            <img src="img/чб_alden.png" alt="AldenBailey">
+            <div class="partners__hover">
+              <a class="partners__link" href="#">
+                <img src="img/alden.png" alt="">
+              </a>
             </div>
-          </article>
-        </section>
-        <div class="pagination">
-          <ul class="pagination__list">
-            <li class="pagination__item">
-              <a href="" class="pagination__link">1</a>
-            </li>
-            <li class="pagination__item">
-              <a href="" class="pagination__link">2</a>
-            </li>
-            <li class="pagination__item">
-              <a href="" class="pagination__link">3</a>
-            </li>
-            <li class="pagination__item">
-              <a href="" class="pagination__link">4</a>
-            </li>
-            <li class="pagination__item">
-              <a href="" class="pagination__link">5</a>
-            </li>
-            <li class="pagination__item pagination__item--last">
-              <a href="" class="pagination__link pagination__link--last">></a>
-            </li>
-          </ul>
+          </li>
+          <li class="partners__item">
+            <img src="img/чб_эврика.png" alt="Эврика">
+            <div class="partners__hover">
+              <a class="partners__link" href="#">
+                <img src="img/эврика.png" alt="">
+              </a>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section class="form">
+        <div class="form__all">
+          <div class="form__text-all">
+            <h3 class="form__title">Мне нужен специалист</h3>
+            <p class="form__text">на замер и/или расчет стоимости работ</p>
+          </div>
+          <input type="text" name="phone" class="form__phone" placeholder="Номер телефона">
+          <button type="button" class="button form__button">Свяжитесь со мной</button>
         </div>
-      </div>
-      <div class="articles-page__container-right">
-        <h2 class="articles-page__title-right">Это важно!</h2>
-        <article class="article-item articles-page__side-article">
-        <h2 class="article-item__header articles-page__side-header">
-          Довольно длинное название интересной статьи
-        </h2>
-        <p class="article-item__descr articles-page__side-descr">
-          Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык...
-        </p>
-        <p class="article-item__date articles-page__side-date">10 Июля 2018</p>
-      </article>
-      <article class="article-item article-item articles-page__side-article">
-        <h2 class="article-item__header articles-page__side-header">
-          Довольно длинное название интересной статьи
-        </h2>
-        <p class="article-item__descr articles-page__side-descr">
-          Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного
-          текста рыбы на русском языке, а начинающему оратору отточить навык...
-        </p>
-        <p class="article-item__date articles-page__side-date">10 Июля 2018</p>
-      </article>
-      </div>
+        <p class="form__note">отправляя заявку я соглашаюсь с пользовательским соглшением и принимаю условия политики
+          конфидициальности</p>
+      </section>
     </section>
+
   </main>
   <footer class="page-footer">
     <div class="page-footer__top">
@@ -186,7 +210,7 @@
         <h4 class="page-footer__title">Меню сайта</h4>
         <ul class="page-footer__list site-list">
           <li class="site-list__item">
-            <a href="" class="site-list__link">Наши услуги</a>
+            <a href="services.html" class="site-list__link">Наши услуги</a>
           </li>
           <li class="site-list__item">
             <a href="" class="site-list__link">О нас</a>
@@ -198,7 +222,7 @@
             <a href="" class="site-list__link">Партнеры</a>
           </li>
           <li class="site-list__item">
-            <a href="" class="site-list__link">Статьи</a>
+            <a href="articles.html" class="site-list__link">Статьи</a>
           </li>
           <li class="site-list__item">
             <a href="" class="site-list__link">Контакты</a>
