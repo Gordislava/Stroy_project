@@ -74,3 +74,94 @@
   padding-left: 14px;
   text-align: left;
 }
+
+.page__text--projects {
+  padding-bottom: 30px;
+}
+
+.page__filter {
+  width: 61%;
+  margin: auto;
+}
+
+.page__filter-list {
+  @include list-norm;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.page__filter-item {
+  @include text (400, 14px, $title-color, normal);
+  text-transform: uppercase;
+  padding: 12px;
+
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: $accent;
+    font-weight: 700;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+}
+
+.page__filter--active {
+  background-color: $accent;
+  font-weight: 700;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.page__offer {
+  width: 100%;
+  border: 1px solid $text-light;
+  margin-bottom: 15px;
+  background-repeat: no-repeat;
+  background-position: 95% 50%;
+  background-size: 46px 46px;
+}
+
+.page__offer--money {
+  background-image: url('../../img/price.png');
+}
+
+.page__offer--time {
+  background-image: url('../../img/time.png');
+}
+
+.page__offer p {
+  @include text (400, 16px, $title-color, 20px);
+  margin: 0;
+  padding: 5px 20px 5px 20px;
+}
+
+.page__banner {
+  width: 100%;
+  height: 425px;
+
+  border: 1px solid $text-light;
+}
+
+.page__banner-content {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  background-color: $bgr-dark;
+  border: 15px solid $bgr-color;
+}
+
+@media (max-width: 768px) {
+  .page__banner {
+    display: none;
+  }
+
+  .page__offer {
+    max-width: 260px;
+    margin-bottom: 20px;
+  }
+}
+
+

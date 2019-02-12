@@ -91,6 +91,19 @@
   overflow: hidden;
 }
 
+.gallery--light {
+  background-image: none;
+}
+
+.gallery__title--service,
+.gallery__button--service {
+  text-align: left;
+}
+
+.gallery--service {
+  margin-bottom: 20px;
+}
+
 @media (max-width: 600px) {
   .gallery__list {
     justify-content: center;
