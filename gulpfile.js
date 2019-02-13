@@ -15,7 +15,7 @@ var del = require("del");
 var run = require("run-sequence");
 
 gulp.task("style", function () {
-  gulp.src("source/sass/style.scss")
+  return gulp.src("source/sass/style.scss")
     .pipe(plumber())
     .pipe(sass())
     .pipe(postcss([
@@ -78,17 +78,11 @@ gulp.task("serve", function () {
     ui: false
   });
 
-  gulp.watch("source/sass/**/*.{scss,sass}", ["style"]);
-  gulp.watch("source/*.html", ["copy"])
+  gulp.watch("source/sass/**/*.{scss,sass}", gulp.parallel("style"));
+  gulp.watch("source/*.html", gulp.parallel("copy"))
     .on("change", server.reload);
 });
 
-gulp.task("build", function (done) {
-  run(
-    "clean",
-    "copy",
-    "style",
-    "sprite",
-    done
-  );
-});
+gulp.task("build", gulp.series("clean", "copy", "style", "sprite", function (done) {
+  done ();
+}));
